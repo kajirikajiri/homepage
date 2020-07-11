@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <markdown :source="hoge"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Markdown from '@/components/Markdown.vue'
+import hoge from '@/assets/md/hoge.md'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Markdown
+  },
+  data(){
+    return {
+      hoge
+    }
   }
 }
 </script>
