@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <markdown :source="hoge"/>
+    <markdown :markdown="hoge"/>
   </div>
 </template>
 
