@@ -1,6 +1,6 @@
 <template>
   <div
-    style="padding-bottom: 90px; display: flex; flex-wrap: wrap; width: 100%;"
+    style="padding-bottom: 70px; display: flex; flex-wrap: wrap; width: 100%;"
   >
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
       {{ $route.query.name }}
@@ -13,6 +13,16 @@
       style="word-break: break-all;"
       :source="markdown"
     />
+    <div
+      style="
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 60px;
+      "
+    >
+      --end--
+    </div>
   </div>
 </template>
 
