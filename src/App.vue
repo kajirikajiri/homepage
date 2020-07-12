@@ -6,6 +6,7 @@
 
 <script>
 import Darkmode from 'darkmode-js';
+import Vue from 'vue';
 const options = {
   bottom: '64px', // default: '32px'
   right: 'unset', // default: '32px'
@@ -20,7 +21,7 @@ const options = {
   autoMatchOsTheme: true // default: true
 }
 new Darkmode().showWidget(options)
-export default {
+export default Vue.extend({
   head: {
     link: [
       {
@@ -29,7 +30,7 @@ export default {
       }
     ]
   }
-}
+})
 </script>
 
 <style>
