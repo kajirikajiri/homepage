@@ -2,28 +2,42 @@
   <div>
     {{$route.query.name}}<br>
     更新:{{$route.query.modify}}<br>
-    作成:{{new Date($route.query.birth)}}
-    <markdown :markdown="hoge"/>
+    作成:{{new Date($route.query.birth)}}<br>
+    <vue-markdown class="target" :source="markdown"/>
   </div>
 </template>
 
-<script>
-import Markdown from '@/components/Markdown.vue'
-// import hoge from `@/assets/md/${$route.query.name}`
+<script lang="ts">
+import '../plugins/google-code-prettify/run_prettify'
 
 export default {
-  components: {
-    Markdown
-  },
   data(){
     return {
-      hoge: 'hoge'
+      markdown: ''
     }
   },
   created(){
     const a = require(`../assets/md/${this.$route.query.name}`)  // eslint-disable-line
-    console.log(a)
-    this.hoge = a.default
+    this.markdown = a.default
+  },
+  mounted() {
+    const elements: NodeListOf<Element>|null = document.querySelectorAll('.target pre')
+    if(!elements) return
+
+    elements.forEach(element=>{
+      if(!element) return
+
+      element.className = 'prettyprint'
+    })
+
+    this.$nextTick(function () {
+      PR.prettyPrint() //eslint-disable-line
+    })
   }
 }
 </script>
+
+<style scoped lang="scss">
+  @import '../plugins/google-code-prettify/prettify.css';
+  @import '../plugins/google-code-prettify/skins/doxy.css';
+</style>
