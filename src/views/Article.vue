@@ -1,6 +1,6 @@
 <template>
   <div
-    style="padding-bottom: 50px; display: flex; flex-wrap: wrap; width: 100%;"
+    style="padding-bottom: 90px; display: flex; flex-wrap: wrap; width: 100%;"
   >
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
       {{ $route.query.name }}
