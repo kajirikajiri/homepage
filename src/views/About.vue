@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script lang="js">
+<script>
 import '../plugins/google-code-prettify/run_prettify'
 
 export default {
@@ -21,7 +21,7 @@ export default {
     this.markdown = a.default
   },
   mounted() {
-    const elements: NodeListOf<Element>|null = document.querySelectorAll('.target pre')
+    const elements = document.querySelectorAll('.target pre')
     if(!elements) return
 
     elements.forEach(element=>{
