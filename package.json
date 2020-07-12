@@ -22,7 +22,8 @@
       "prettier --no-semi --single-quote --trailing-comma=es5 --write"
     ],
     "*.md": [
-      "./shell.sh"
+      "./shell.sh",
+      "git add"
     ]
   },
   "dependencies": {
