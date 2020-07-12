@@ -22,6 +22,10 @@
 
 これは見出し6です。
 
+## 参照
+
+これは参照です。[^1]
+
 ## 段落
 
 これは1つ目の段落の1行目です。  
@@ -136,3 +140,6 @@ puts 1 + 1
 ## 画像
 
 これは ![バナナ](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bananavarieties.jpg/220px-Bananavarieties.jpg) 画像です。
+
+
+[^1]: 参照先です
