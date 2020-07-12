@@ -13,9 +13,10 @@ xstat() {
 rm -rf markdowns.js
 
 echo "export const markdowns = [" >> temp.js
-for file in ./src/assets/md/*; do
-  Modify=$(stat ${file}|grep Modify:)
-  Birth=$(xstat ${file})
+files=$(ls -A1t ./src/assets/md)
+for file in $files; do
+  Modify=$(stat ./src/assets/md/${file}|grep Modify:)
+  Birth=$(xstat ./src/assets/md/${file})
   echo "  {name: '${file##*/}', birth: '${Birth}', modify: '${Modify}'}," >> temp.js
 done
 echo "]" >> temp.js
