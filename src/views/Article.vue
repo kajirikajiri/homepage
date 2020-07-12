@@ -1,12 +1,18 @@
 <template>
-  <div style="padding-bottom: 50px;">
+  <div
+    style="padding-bottom: 50px; display: flex; flex-wrap: wrap; width: 100%;"
+  >
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
       {{ $route.query.name }}
     </div>
     <div>更新:{{ $route.query.modify.replace(/-/g, '/') }}</div>
     <div>作成:{{ new Date($route.query.birth) }}</div>
     <hr style="border-width: 2px;" />
-    <vue-markdown class="target" :source="markdown" />
+    <vue-markdown
+      class="target"
+      style="word-break: break-all;"
+      :source="markdown"
+    />
   </div>
 </template>
 
@@ -31,6 +37,7 @@ export default {
       if (!element) return
 
       element.className = 'prettyprint'
+      element.style.width = '93%'
     })
 
     this.$nextTick(function () {
