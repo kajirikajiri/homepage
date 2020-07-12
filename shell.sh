@@ -23,4 +23,5 @@ echo "]" >> temp.js
 sed -e 's/Modify: //g' temp.js > markdowns.js
 rm -rf temp.js
 
+git add ./markdowns.js
 echo 'ok markdown listed !!'
