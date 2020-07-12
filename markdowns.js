@@ -1,14 +1,13 @@
 export const markdowns = [
-  { name: 'sample2', birth: '	', modify: '' },
   {
-    name: 'copy.md',
-    birth: 'Sun Jul 12 15:55:34 2020	',
-    modify: '2020-07-12 16:41:37.945529300 +0900',
+    name: 'sample2copy.md',
+    birth: 'Sun Jul 12 20:15:30 2020	',
+    modify: '2020-07-12 20:17:11.368000000 +0900',
   },
   {
     name: 'sample2.md',
     birth: 'Sun Jul 12 20:13:53 2020	',
-    modify: '2020-07-12 20:13:58.598000000 +0900',
+    modify: '2020-07-12 20:16:38.555529300 +0900',
   },
   {
     name: 'sample.md',
