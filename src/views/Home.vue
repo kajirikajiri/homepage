@@ -8,7 +8,7 @@
       <router-link :to="{path: 'about', query: {...m}}" :key="i">
         <span style="font-weight:bold">{{m.name}}</span>
         <span>, </span>
-        <span style="font-size:14px">{{'update: ' +new Date(m.modify) + ', create: ' + m.birth}}</span><br>
+        <span style="font-size:14px">{{'update: ' +new Date(m.modify.replace(/-/g,"/")) + ', create: ' + new Date(m.birth)}}</span><br>
       </router-link>
     </template>
   </div>
