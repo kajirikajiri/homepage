@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import '../plugins/google-code-prettify/run_prettify'
 
 export default {
