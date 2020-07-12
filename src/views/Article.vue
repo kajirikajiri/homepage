@@ -5,6 +5,7 @@
     </div>
     <div>更新:{{ $route.query.modify.replace(/-/g, '/') }}</div>
     <div>作成:{{ new Date($route.query.birth) }}</div>
+    <hr style="border-width: 2px;" />
     <vue-markdown class="target" :source="markdown" />
   </div>
 </template>
