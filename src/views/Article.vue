@@ -24,7 +24,7 @@
         font-weight: bold;
       "
     >
-      -- end --
+      ---------- end ----------
     </div>
   </div>
 </template>
