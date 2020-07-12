@@ -14,14 +14,17 @@
       :source="markdown"
     />
     <div
+      endContent
+      class="buruburu"
       style="
         display: flex;
         width: 100%;
         justify-content: center;
         margin-top: 60px;
+        font-weight: bold;
       "
     >
-      --end--
+      -- end --
     </div>
   </div>
 </template>
@@ -60,4 +63,26 @@ export default {
 <style scoped lang="scss">
 @import '../plugins/google-code-prettify/prettify.css';
 @import '../plugins/google-code-prettify/skins/doxy.css';
+.buruburu {
+  display: inline-block;
+  animation: hurueru 1s infinite;
+}
+
+@keyframes hurueru {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  55% {
+    transform: translate(2px, 2px) rotateZ(1deg);
+  }
+  70% {
+    transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  95% {
+    transform: translate(2px, 0px) rotateZ(-1deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+}
 </style>
