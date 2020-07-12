@@ -5,5 +5,4 @@
 
 ```javascript
 console.log('hoge')
-  return;
 ```

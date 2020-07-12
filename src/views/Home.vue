@@ -8,6 +8,7 @@
 // @ is an alias to /src
 import Markdown from '@/components/Markdown.vue'
 import hoge from '@/assets/md/hoge.md'
+import filenames from '../../filenames.md'
 
 export default {
   name: 'Home',
@@ -16,7 +17,8 @@ export default {
   },
   data(){
     return {
-      hoge
+      hoge,
+      filenames
     }
   }
 }
