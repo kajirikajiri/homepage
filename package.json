@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "./shell.sh && lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -20,6 +20,9 @@
     "*.vue": [
       "eslint --ext .vue --fix",
       "prettier --no-semi --single-quote --trailing-comma=es5 --write"
+    ],
+    "*.md": [
+      "./shell.sh"
     ]
   },
   "dependencies": {
