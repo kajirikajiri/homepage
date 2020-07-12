@@ -1,24 +1,20 @@
 <template>
   <div class="home">
-    <markdown :markdown="hoge"/>
+    <template v-for="(m,i) in markdowns">
+      <router-link :to="{path: 'about', query: {...m}}" :key="i">
+        {{m.name + ' ' + new Date(m.modify) + m.birth }}
+      </router-link>
+    </template>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Markdown from '@/components/Markdown.vue'
-import hoge from '@/assets/md/hoge.md'
-import filenames from '../../filenames.md'
+import {markdowns} from '../../markdowns.js'
 
 export default {
-  name: 'Home',
-  components: {
-    Markdown
-  },
   data(){
     return {
-      hoge,
-      filenames
+      markdowns
     }
   }
 }

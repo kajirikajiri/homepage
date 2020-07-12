@@ -12,7 +12,7 @@ export default Vue.extend({
   props: {
     markdown: String,
   },
-  mounted(){
+  mounted() {
     const elements: NodeListOf<Element>|null = document.querySelectorAll('.target pre')
     if(!elements) return
 

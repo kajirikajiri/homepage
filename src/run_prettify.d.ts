@@ -1,0 +1,1 @@
+declare module "google-code-prettify/run_prettify"
