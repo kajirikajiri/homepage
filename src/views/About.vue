@@ -1,7 +1,7 @@
 <template>
   <div>
     {{$route.query.name}}<br>
-    更新:{{new Date($route.query.modify.replace(/-/g,"/"))}}<br>
+    更新:{{$route.query.modify.replace(/-/g,"/")}}<br>
     作成:{{new Date($route.query.birth)}}<br>
     <vue-markdown class="target" :source="markdown"/>
   </div>
