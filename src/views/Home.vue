@@ -37,9 +37,9 @@ export default {
       createSortFlag: false,
       currentSort: 'update',
       styleSortUpdateButton: 'background:#6200ee;color:#fff;',
-      styleSortCreateButton: 'background:lightgrey;color:grey',
-      wordStyleSortUpdate: 'font-weight:bold;font-size:12px;',
-      wordStyleSortCreate: 'font-weight:bold;font-size:12px;',
+      styleSortCreateButton: 'background:lightgrey;color:grey;',
+      wordStyleSortUpdate: 'font-size:12px;font-weight:bold;',
+      wordStyleSortCreate: 'font-size:12px;font-weight:bold;',
     }
   },
   computed: {
@@ -65,30 +65,27 @@ export default {
   methods: {
     clickUpdateSort() {
       this.poyon('poyonTargetButtonUpdate')
+      console.log(this.currentSort, this.updateSortFlag)
       if (this.currentSort === 'update' && this.updateSortFlag) {
         this.updateSortFlag = !this.updateSortFlag
         this.styleSortUpdateButton =
-          'transform:rotate(180deg);background:#3700b3;transition: transform 1s;color:#fff'
+          'transform:rotate(0deg);background:#3700b3;transition: transform 1s;color:#fff;'
         this.wordStyleSortUpdate =
-          'transform:rotate(-180deg);transition: transform 0.5s 1s;'
+          'font-weight:bold;font-size:12px;transform:rotate(0deg);transition: transform 0.5s 1s;'
       } else if (this.currentSort === 'update' && !this.updateSortFlag) {
         this.updateSortFlag = !this.updateSortFlag
         this.styleSortUpdateButton =
-          'transform:rotate(360deg);background:#6200ee;transition: transform 1s;color:#fff'
+          'transform:rotate(180deg);background:#6200ee;transition: transform 1s;color:#fff;'
         this.wordStyleSortUpdate =
-          'transform:rotate(-360deg);transition: transform 0.5s 1s;'
+          'font-weight:bold;font-size:12px;transform:rotate(180deg);transition: transform 0.5s 1s;'
       } else if (this.currentSort === 'create' && this.updateSortFlag) {
         this.currentSort = 'update'
-        this.styleSortCreateButton = 'background:lightgrey;color:grey'
+        this.styleSortCreateButton = 'background:lightgrey;color:grey;'
         this.styleSortUpdateButton = 'color:#fff;background:#3700b3;'
-        this.wordStyleSortUpdate =
-          'transform:rotate(-180deg);transition: transform 0.5s 1s;'
       } else if (this.currentSort === 'create' && !this.updateSortFlag) {
         this.currentSort = 'update'
-        this.styleSortCreateButton = 'background:lightgrey;color:grey'
+        this.styleSortCreateButton = 'background:lightgrey;color:grey;'
         this.styleSortUpdateButton = 'color:#fff;background:#6200ee;'
-        this.wordStyleSortUpdate =
-          'transform:rotate(-360deg);transition: transform 0.5s 1s;'
       }
     },
     clickCreateSort() {
@@ -96,27 +93,23 @@ export default {
       if (this.currentSort === 'create' && this.createSortFlag) {
         this.createSortFlag = !this.createSortFlag
         this.styleSortCreateButton =
-          'transform:rotate(180deg);background:#3700b3;transition: transform 1s;color:#fff'
+          'transform:rotate(0deg);background:#3700b3;transition: transform 1s;color:#fff;'
         this.wordStyleSortCreate =
-          'transform:rotate(-180deg);transition: transform 0.5s 1s;'
+          'font-weight:bold;font-size:12px;transform:rotate(0deg);transition: transform 0.5s 1s;'
       } else if (this.currentSort === 'create' && !this.createSortFlag) {
         this.createSortFlag = !this.createSortFlag
         this.styleSortCreateButton =
-          'transform:rotate(360deg);background:#6200ee;transition: transform 1s;color:#fff'
+          'transform:rotate(180deg);background:#6200ee;transition: transform 1s;color:#fff;'
         this.wordStyleSortCreate =
-          'transform:rotate(-360deg);transition: transform 0.5s 1s;'
+          'font-weight:bold;font-size:12px;transform:rotate(180deg);transition: transform 0.5s 1s;'
       } else if (this.currentSort === 'update' && this.createSortFlag) {
         this.currentSort = 'create'
-        this.styleSortUpdateButton = 'background:lightgrey;color:grey'
+        this.styleSortUpdateButton = 'background:lightgrey;color:grey;'
         this.styleSortCreateButton = 'color:#fff;background:#3700b3;'
-        this.wordStyleSortCreate =
-          'transform:rotate(-180deg);transition: transform 0.5s 1s;'
       } else if (this.currentSort === 'update' && !this.createSortFlag) {
         this.currentSort = 'create'
-        this.styleSortUpdateButton = 'background:lightgrey;color:grey'
+        this.styleSortUpdateButton = 'background:lightgrey;color:grey;'
         this.styleSortCreateButton = 'color:#fff;background:#6200ee;'
-        this.wordStyleSortCreate =
-          'transform:rotate(-360deg);transition: transform 0.5s 1s;'
       }
     },
     poyon(target) {
