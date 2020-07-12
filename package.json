@@ -7,6 +7,21 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --no-semi --single-quote --trailing-comma=es5 --write"
+    ],
+    "*.vue": [
+      "eslint --ext .vue --fix",
+      "prettier --no-semi --single-quote --trailing-comma=es5 --write"
+    ]
+  },
   "dependencies": {
     "code-prettify": "git://github.com/google/code-prettify#master",
     "core-js": "^3.6.5",
@@ -32,6 +47,9 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
