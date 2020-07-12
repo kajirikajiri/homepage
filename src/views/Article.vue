@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="padding-bottom: 50px;">
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
       {{ $route.query.name }}
     </div>
