@@ -2,7 +2,7 @@ export const markdowns = [
   {
     name: 'computed-failed.md',
     birth: 'Sat Jul 18 15:59:06 2020	',
-    modify: '2020-07-18 16:06:46.171975100 +0900',
+    modify: '2020-07-18 16:19:46.251975100 +0900',
   },
   {
     name: '今日の遊び.md',
