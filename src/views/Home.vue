@@ -6,12 +6,7 @@
         class="rotate"
         :style="updateOrderStyle.button"
       >
-        <span
-          poyonTargetButtonUpdate
-          class="poyon"
-          :style="updateOrderArrowStyle"
-          >⬆</span
-        >
+        <span :style="updateOrderArrowStyle">🔼</span>
         <span :style="updateOrderStyle.word">Update</span>
       </div>
       <div
@@ -19,7 +14,7 @@
         class="rotate"
         :style="createOrderStyle.button"
       >
-        <span poyonTargetButtonCreate :style="createOrderArrowStyle">⬆</span>
+        <span :style="createOrderArrowStyle">🔼</span>
         <span :style="createOrderStyle.word">Create</span>
       </div>
     </div>
@@ -141,10 +136,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
   height: 30px;
   border-radius: 4px;
   margin-right: 10px;
   margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 </style>

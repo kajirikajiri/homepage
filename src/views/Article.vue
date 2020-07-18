@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding-bottom: 70px; display: flex; flex-wrap: wrap; width: 100%;"
-  >
+  <div style="padding-bottom: 100px;">
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
       {{ $route.query.name }}
     </div>
@@ -14,8 +12,6 @@
       :source="markdown"
     />
     <div
-      endContent
-      class="buruburu"
       style="
         display: flex;
         width: 100%;
@@ -24,7 +20,9 @@
         font-weight: bold;
       "
     >
-      ---------- end ----------
+      ----------<span class="buruburu">🧡</span>end<span class="buruburu"
+        >🧡</span
+      >----------
     </div>
   </div>
 </template>
@@ -64,6 +62,8 @@ export default {
 @import '../plugins/google-code-prettify/prettify.css';
 @import '../plugins/google-code-prettify/skins/doxy.css';
 .buruburu {
+  padding-left: 10px;
+  padding-right: 10px;
   display: inline-block;
   animation: hurueru 1s infinite;
 }
