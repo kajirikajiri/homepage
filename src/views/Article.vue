@@ -49,6 +49,7 @@ export default {
 
       element.className = 'prettyprint'
       element.style.width = '93%'
+      element.style.padding = '7px'
     })
 
     this.$nextTick(function () {
@@ -60,7 +61,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../plugins/google-code-prettify/prettify.css';
-@import '../plugins/google-code-prettify/skins/doxy.css';
+@import '../plugins/google-code-prettify/skins/tomorrow.css';
 .buruburu {
   padding-left: 10px;
   padding-right: 10px;
