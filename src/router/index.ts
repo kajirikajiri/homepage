@@ -17,6 +17,11 @@ Vue.use(VueRouter)
     // this generates a separate chunk (article.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "article" */ '../views/Article.vue')
+  },
+  {
+    path: '/computed-failed',
+    name: 'ComputedFailed',
+    component: () => import(/* webpackChunkName: "article" */ '../views/ComputedFailed.vue')
   }
 ]
 
