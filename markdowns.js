@@ -1,8 +1,8 @@
 export const markdowns = [
   {
-    name: 'obsidianメモ帳を使い始めた.md',
+    name: 'obsidianメモ帳をセッティングした.md',
     birth: '2020/07/19 02:22:58',
-    modify: '2020/07/19 02:31:00',
+    modify: '2020/07/19 02:57:39',
   },
   {
     name: 'wsl2-cronttab.md',
