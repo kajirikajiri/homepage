@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="display: flex;">
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
       <div
         @click="clickUpdateSort()"
         class="rotate"
@@ -17,6 +17,11 @@
         <span :style="createOrderArrowStyle">🔼</span>
         <span :style="createOrderStyle.word">Create</span>
       </div>
+      <a href="https://github.com/kajirikajiri">
+        <div style="display: flex;">
+          <img width="73" height="30" src="@/assets/img/GitHub_Logo.png" />
+        </div>
+      </a>
     </div>
     <article-list :markdowns="computedMarkdowns" />
   </div>
@@ -139,7 +144,6 @@ export default {
   height: 30px;
   border-radius: 4px;
   margin-right: 10px;
-  margin-bottom: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
