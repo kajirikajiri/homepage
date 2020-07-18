@@ -24,6 +24,9 @@
         >🧡</span
       >----------
     </div>
+    <div>
+      <router-link to="/">Articles</router-link>
+    </div>
   </div>
 </template>
 
