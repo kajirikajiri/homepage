@@ -5,10 +5,7 @@
         <span style="font-weight: bold;">{{ m.name }}</span>
         <span>, </span>
         <span style="font-size: 14px;">{{
-          'update: ' +
-          m.modify.replace(/-/g, '/') +
-          ', create: ' +
-          new Date(m.birth)
+          'update: ' + m.modify + ', create: ' + m.birth
         }}</span
         ><br />
       </router-link>

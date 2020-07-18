@@ -4,7 +4,7 @@
       {{ $route.query.name }}
     </div>
     <div>更新:{{ $route.query.modify.replace(/-/g, '/') }}</div>
-    <div>作成:{{ new Date($route.query.birth) }}</div>
+    <div>作成:{{ $route.query.birth }}</div>
     <hr style="border-width: 2px;" />
     <vue-markdown
       class="target"
@@ -17,6 +17,7 @@
         width: 100%;
         justify-content: center;
         margin-top: 60px;
+        margin-bottom: 60px;
         font-weight: bold;
       "
     >
@@ -25,7 +26,11 @@
       >----------
     </div>
     <div>
-      <router-link to="/">Articles</router-link>
+      <router-link
+        style="display: flex; width: 100%; justify-content: center;"
+        to="/"
+        >Articles</router-link
+      >
     </div>
   </div>
 </template>
