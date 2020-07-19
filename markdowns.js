@@ -1,5 +1,10 @@
 export const markdowns = [
   {
+    name: '考察.md',
+    birth: '2020/07/19 16:25:01',
+    modify: '2020/07/19 16:25:04',
+  },
+  {
     name: 'obsidianメモ帳をセッティングした.md',
     birth: '2020/07/19 02:22:58',
     modify: '2020/07/19 02:57:39',
