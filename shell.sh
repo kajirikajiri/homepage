@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# 空白を含むファイル名に対応
+# IFS=$'\n'でもできるはずだが、できなかった
+IFS='
+'
+
 xstat() {
   for target in "${@}"; do
     inode=$(ls -di "${target}" | cut -d ' ' -f 1)

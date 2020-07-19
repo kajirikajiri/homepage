@@ -1,5 +1,30 @@
 export const markdowns = [
   {
+    name: 'computed failed.md',
+    birth: '2020/07/18 15:59:06',
+    modify: '2020/07/19 17:32:32',
+  },
+  {
+    name: 'wsl2 cronttab.md',
+    birth: '2020/07/18 23:07:43',
+    modify: '2020/07/19 17:32:26',
+  },
+  {
+    name: 'markdown test.md',
+    birth: '2020/07/12 23:37:59',
+    modify: '2020/07/19 17:32:20',
+  },
+  {
+    name: 'object in array with react typescript.md',
+    birth: '2020/07/19 17:10:55',
+    modify: '2020/07/19 17:11:53',
+  },
+  {
+    name: 'なぜimportreactする必要があるのか.md',
+    birth: '2020/07/19 16:40:58',
+    modify: '2020/07/19 16:41:05',
+  },
+  {
     name: '考察.md',
     birth: '2020/07/19 16:25:01',
     modify: '2020/07/19 16:25:04',
@@ -8,11 +33,6 @@ export const markdowns = [
     name: 'obsidianメモ帳をセッティングした.md',
     birth: '2020/07/19 02:22:58',
     modify: '2020/07/19 02:57:39',
-  },
-  {
-    name: 'wsl2-cronttab.md',
-    birth: '2020/07/18 23:07:43',
-    modify: '2020/07/19 02:22:23',
   },
   {
     name: '今日の調べ物.md',
@@ -28,16 +48,6 @@ export const markdowns = [
     name: 'ファイルの昇順降順機能を作った.md',
     birth: '2020/07/18 18:01:08',
     modify: '2020/07/18 18:06:37',
-  },
-  {
-    name: 'markdown-test.md',
-    birth: '2020/07/12 23:37:59',
-    modify: '2020/07/18 17:08:02',
-  },
-  {
-    name: 'computed-failed.md',
-    birth: '2020/07/18 15:59:06',
-    modify: '2020/07/18 16:19:46',
   },
   {
     name: '今日の遊び.md',
