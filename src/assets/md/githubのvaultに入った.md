@@ -3,4 +3,4 @@
 --1000年後--
 なんだこのクソコードは！！ってなってなければいいな。
 
-<img src="/img/vault.png" width="50%">
+<img src="/img/vault.png" width="100%">

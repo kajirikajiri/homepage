@@ -1,5 +1,20 @@
 export const markdowns = [
   {
+    name: 'electronを触ってみた.md',
+    birth: '2020/07/24 16:22:30',
+    modify: '2020/07/24 16:31:36',
+  },
+  {
+    name: 'githubのvaultに入った.md',
+    birth: '2020/07/18 20:45:54',
+    modify: '2020/07/24 16:22:50',
+  },
+  {
+    name: 'obsidianを色々設定してみた.md',
+    birth: '2020/07/24 16:11:13',
+    modify: '2020/07/24 16:22:50',
+  },
+  {
     name: '今日のぶつ.md',
     birth: '2020/07/19 19:27:16',
     modify: '2020/07/19 19:31:32',
@@ -53,11 +68,6 @@ export const markdowns = [
     name: '今日の調べ物.md',
     birth: '2020/07/18 21:55:21',
     modify: '2020/07/18 23:08:52',
-  },
-  {
-    name: 'githubのvaultに入った.md',
-    birth: '2020/07/18 20:45:54',
-    modify: '2020/07/18 21:51:42',
   },
   {
     name: 'ファイルの昇順降順機能を作った.md',
