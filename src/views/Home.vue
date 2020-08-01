@@ -19,7 +19,7 @@
       </div>
       <a href="https://github.com/kajirikajiri">
         <div style="display: flex;">
-          <img width="73" height="30" src="@/assets/img/GitHub_Logo.png" />
+          <img width="73" height="30" src="@/assets/GitHub_Logo.png" />
         </div>
       </a>
     </div>
