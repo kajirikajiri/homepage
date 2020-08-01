@@ -1,8 +1,13 @@
 export const markdowns = [
   {
+    name: 'github profileの流行りに乗ってみた.md',
+    birth: '2020/08/01 16:04:28',
+    modify: '2020/08/01 17:46:40',
+  },
+  {
     name: 'electronを触ってみた.md',
     birth: '2020/07/24 16:22:30',
-    modify: '2020/07/24 16:31:36',
+    modify: '2020/07/24 18:41:52',
   },
   {
     name: 'githubのvaultに入った.md',
