@@ -28,7 +28,7 @@ https://qiita.com/s-yoshiki/items/436bbe1f7160b610b05c
 https://simpleicons.org/
 大量だ大量にある
 
-<img src="/img/github_profile_complete" width="100%">
+<img src="/img/github_profile_complete.png" width="100%">
 完成しました
 
 

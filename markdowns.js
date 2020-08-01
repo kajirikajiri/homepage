@@ -2,7 +2,7 @@ export const markdowns = [
   {
     name: 'github profileの流行りに乗ってみた.md',
     birth: '2020/08/01 16:04:28',
-    modify: '2020/08/01 17:46:40',
+    modify: '2020/08/01 17:49:12',
   },
   {
     name: 'electronを触ってみた.md',
